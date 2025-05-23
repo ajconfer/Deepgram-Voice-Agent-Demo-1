@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "A Node.js starter application for Deepgram's Voice Agent API",
   "main": "dist/index.js",
-  "scripts": {
-    "build": "tsc",
-    "start": "ts-node src/index.ts",
-    "test": "jest",
-    "dev": "ts-node-dev --respawn src/index.ts"
-  },
+"scripts": {
+  "build": "tsc",
+  "start": "node dist/index.js",  // <- assumes your compiled file goes here
+  "test": "jest",
+  "dev": "ts-node-dev --respawn src/index.ts"
+}
   "keywords": [
     "deepgram",
     "voice-agent",
